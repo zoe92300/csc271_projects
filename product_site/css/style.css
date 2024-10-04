@@ -113,10 +113,10 @@ table td {
     padding-left: 15px; 
 }
 
-#art-title {
+.art-title {
     color: #7d83b2;
 }
-#art-subtitle {
+.art-subtitle {
     color: #8d9dcc;
 }
 
@@ -173,6 +173,7 @@ main a:visited:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 iframe {
