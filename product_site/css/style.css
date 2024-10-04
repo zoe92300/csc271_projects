@@ -14,10 +14,10 @@ body{
 }
 header div {
     display: flex;
-    justify-content: left; 
-    align-items: left; 
+    justify-content: flex-start; 
+    align-items: flex-start;     
     margin-top: 20px;    
-    gap: 30px;               
+    gap: 30px;              
 }
 h1 {
     color: #7d83b2;
@@ -128,9 +128,9 @@ input, textarea{
     border-radius: 6px ;
 }
 input:focus, textarea:focus {
-    outline: none; /* Enlève le contour bleu par défaut */
-    border: 2px solid #dbf4a7; /* Change la couleur de la bordure au focus */
-    box-shadow: 0 0 5px #dbf4a7; /* Ajoute une ombre pour un effet lumineux */
+    outline: none;
+    border: 2px solid #dbf4a7; 
+    box-shadow: 0 0 5px #dbf4a7; 
 }
 
 
