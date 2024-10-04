@@ -1,0 +1,183 @@
+/* CSS for the buttons */
+
+/*
+#7d83b2
+#8d9dcc
+#d9dbf1
+#f9f9ed
+#dbf4a7
+*/
+
+body{
+    font-family: 'Verdana';
+    margin-left: 25px;
+}
+header div {
+    display: flex;
+    justify-content: left; 
+    align-items: left; 
+    margin-top: 20px;    
+    gap: 30px;               
+}
+h1 {
+    color: #7d83b2;
+}
+h2 {
+    color: #7d83b2;
+}
+h3 {
+    color: #7d83b2;
+}
+li {
+    color: #7d83b2;
+    margin-left: 25px;
+    
+}
+li::marker {
+    color: #dbf4a7; /* Change la couleur du point en rouge */
+    font-size: 20px; /* Change la taille du point */
+}
+.button {
+    display: flex;            /* Utilisation de flexbox */
+    justify-content: center;   /* Centre horizontalement le texte */
+    align-items: center;     
+    padding: 10px 20px;
+    background-color: #d9dbf1;
+    color: #8d9dcc;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.button:hover {
+    background-color: #dbf4a7;
+}
+
+/* CSS for spacing between the links */
+.about-link {
+    margin-right: 10px;
+}
+
+#hobbies {
+    margin-top: 10px;
+    width: 170px;
+}
+
+
+main img {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+p {
+    background-color: #f9f9ed;
+    color: #7d83b2;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#supply_picture {
+    margin-top: 10px;
+    width: 700px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+table {
+    background-color: #f9f9ed;
+    color: #8d9dcc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: block;
+    width: 40%;
+    margin-left: 0;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table tr:first-child {
+    color: #7d83b2;
+}
+table td {
+    padding-right: 25px; 
+    padding-left: 15px; 
+}
+
+#art-title {
+    color: #7d83b2;
+}
+#art-subtitle {
+    color: #8d9dcc;
+}
+
+label{
+    color: #7d83b2;
+}
+input, textarea{
+    border-color: #7d83b2;
+    border-radius: 6px ;
+}
+input:focus, textarea:focus {
+    outline: none; /* Enlève le contour bleu par défaut */
+    border: 2px solid #dbf4a7; /* Change la couleur de la bordure au focus */
+    box-shadow: 0 0 5px #dbf4a7; /* Ajoute une ombre pour un effet lumineux */
+}
+
+
+a{
+    color: #dbf4a7;
+    text-decoration: none;
+    background-color: #8d9dcc;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 5px;
+}
+a:hover{
+    color: #7d83b2;
+    text-decoration: none;
+    background-color: #d9dbf1;
+}
+
+main a:visited {
+    color: lightgray; 
+    font-weight: bold; 
+}
+main a:visited:hover {
+    color: #7d83b2;
+    text-decoration: none;
+    background-color: #d9dbf1;
+}
+
+
+
+.footnote {
+    color: #7d83b2;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

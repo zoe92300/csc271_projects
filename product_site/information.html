@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>More information</title>
 </head>
 <body>
-    <header> 
-        <img src="images/hobbies_logo.svg" alt="hobbies_logo" width="200" height="50">
-        <h1> More information </h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="information.html">More information</a></li>
-        </ul>
+    <header>
+        
+        <div>   
+            <img src="images/hobbies_logo.svg" alt="logo" id="hobbies">
+            <a href="index.html" class="button about-link"> Home Page</a>
+            <a href="information.html" class="button about-link"> More Information</a>
+            <a href="about.html" class="button about-link"> About </a>
+        </div>
+        <h1> About Hobbies...</h1>
     </header>
 
     <main>
@@ -68,9 +71,9 @@
         <p> Loved a hobby but don't know how to get inspiration ? Here are some pictures of a few artists selected this week ! </p>
 
         <br>
-        <strong> Sandra Quilcho</strong>
+        <strong id="art-title"> Sandra Quilcho</strong>
         <br>
-        <em> Vintage flower Girl</em>
+        <em id="art-subtitle"> Vintage flower Girl</em>
         <br>
         <img src="images/vintage_flower.jpg" alt="vintage_flower" width="250" height="320">
 
@@ -78,9 +81,9 @@
         <br>
         <br>
         
-        <strong> Sandra Quilcho</strong>
+        <strong id="art-title"> Sandra Quilcho</strong>
         <br>
-        <em> Woman on the flower hill  </em>
+        <em id="art-subtitle"> Woman on the flower hill  </em>
         <br>
         <img src="images/hill_flower.jpeg" alt="hill_flower" width="250" height="320">
         
@@ -88,17 +91,17 @@
         <br>
         <br>
 
-        <strong> Peter Craving</strong>
+        <strong id="art-title"> Peter Craving</strong>
         <br>
-        <em> Poterie collection  </em>
+        <em id="art-subtitle"> Poterie collection  </em>
         <br>
         <img src="images/poterie_collection.jpg" alt="poterie_collection" width="300" height="250">
         <br>
         <br>
 
-        <strong> Emily Peters</strong>
+        <strong id="art-title"> Emily Peters</strong>
         <br>
-        <em> Wondering ocean bird  </em>
+        <em id="art-subtitle"> Wondering ocean bird  </em>
         <br>
         <img src="images/watercolor_bird.jpeg" alt="bird" width="400" height="300">
 
@@ -106,9 +109,9 @@
         <br>
         <br>
 
-        <strong> Emily Peters</strong>
+        <strong id="art-title"> Emily Peters</strong>
         <br>
-        <em> Lost ocean birds  </em>
+        <em id="art-subtitle"> Lost ocean birds  </em>
         <br>
         <img src="images/watercolor_birds.jpeg" alt="birds" width="400" height="300">
     
@@ -143,18 +146,18 @@
             <br>
             <br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="button">Submit</button>
         </form>
         <section>
 
 
             <h2> Related Websites</h2>
-            <p> 
-                Want to get more inpsiration, there are some related websites that you can visit.
-            </p>
+            <h3> 
+                Want to get more inpsiration ? Here are some related websites that you can visit.
+            </h3>
             
             <img src="images/pinterest.webp" alt="pinterest" width="70" height="65">
-            <p> <a href="https://www.pinterest.com/"> Pinterest </a> is a popular social media platform that is widely used by artists and art enthusiasts. 
+            <p> <a href="https://www.pinterest.com/">Pinterest</a> is a popular social media platform that is widely used by artists and art enthusiasts. 
                 It serves as a virtual pinboard where users can discover, save, and organize ideas and inspiration for various topics, including art.
                 On Pinterest, users can create boards to categorize and save images, articles, and other content 
                 related to art. These boards can be public or private, allowing users to curate their own collections 
@@ -162,7 +165,7 @@
             </p>
             <img src="images/etsy.jpeg" alt="pinterest" width="80" height="65">
 
-            <p><a href="https://www.etsy.com/fr/?ref=lgo"> Etsy </a> 
+            <p><a href="https://www.etsy.com/fr/?ref=lgo">Etsy</a> 
                 is an online marketplace that specializes in handmade, vintage, and unique items. 
                 It is a popular platform for artists and artisans to sell their artwork, 
                 crafts, and other creative products.</p>
