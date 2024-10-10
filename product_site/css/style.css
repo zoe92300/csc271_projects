@@ -12,13 +12,64 @@ body{
     font-family: 'Verdana';
     margin-left: 25px;
 }
-header div {
+/* Align logo to the left and buttons horizontally to the right */
+.header {
     display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start;     
-    margin-top: 20px;    
-    gap: 30px;              
+    justify-content: space-between; /* Space between logo and buttons */
+    align-items: center; /* Align vertically */
+    padding: 5px;
+    background-color: #f9f9ed;
 }
+
+/* Logo container */
+.logo {
+    margin-left: 10px;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 5px; /* Horizontal spacing between buttons */
+}
+
+/* Button styles */
+.button {
+    padding: 10px 20px;
+    background-color: #d9dbf1;
+    color: #8d9dcc;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    text-align: center;
+    display: flex;            /* Utilisation de flexbox */
+    justify-content: center;   /* Centre horizontalement le texte */
+    align-items: center;     
+    padding: 10px 20px;
+    background-color: #d9dbf1;
+}
+.active {
+    background-color: #7d83b2; /* Change background color for active link */
+    color: #f9f9ed; /* Change text color for active link */
+}
+.active:hover {
+    background-color: #dbf4a7; /* Lighter background on hover */
+    color: #7d83b2; /* Change the text color on hover */
+}
+
+/* Hover effect on buttons */
+.button:hover {
+    background-color: #dbf4a7;
+}
+
+/* Adjust the spacing for the buttons */
+.about-link {
+    margin-right: 10px;
+}
+
+  
 h1 {
     color: #7d83b2;
 }
@@ -34,32 +85,16 @@ li {
     
 }
 li::marker {
-    color: #dbf4a7; /* Change la couleur du point en rouge */
-    font-size: 20px; /* Change la taille du point */
-}
-.button {
-    display: flex;            /* Utilisation de flexbox */
-    justify-content: center;   /* Centre horizontalement le texte */
-    align-items: center;     
-    padding: 10px 20px;
-    background-color: #d9dbf1;
-    color: #8d9dcc;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    outline: none;
+    color: #dbf4a7; 
+    font-size: 20px; 
 }
 
-.button:hover {
-    background-color: #dbf4a7;
-}
 
 /* CSS for spacing between the links */
 .about-link {
     margin-right: 10px;
 }
+
 
 #hobbies {
     margin-top: 10px;
@@ -92,26 +127,32 @@ p {
   
 }
 
+/* Table styling */
 table {
+    width: 100%; /* Ensures the table takes the full width of its container */
     background-color: #f9f9ed;
     color: #8d9dcc;
     padding: 20px;
-    margin: 20px;
+    margin: 30px 0;
     border-radius: 20px;
-    display: block;
-    width: 40%;
-    margin-left: 0;
-    margin-right: auto;
     border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to give some depth */
 }
 
+/* Table header styling */
 table tr:first-child {
     color: #7d83b2;
+    font-weight: bold;
 }
-table td {
-    padding-right: 25px; 
-    padding-left: 15px; 
+
+/* Table cell padding */
+table td, table th {
+    padding: 15px;
+    text-align: left; /* Align text to the left */
 }
+
+
+
 
 .art-title {
     color: #7d83b2;
@@ -174,11 +215,127 @@ main a:visited:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap; /* Ensures the images wrap if there’s not enough space */
 }
 
+.pictures img {
+    max-width: 100%; /* Makes sure images don’t overflow their container */
+    height: auto; /* Keeps the aspect ratio */
+    flex: 1 1 48%; /* Allows images to take up 48% of the parent container */
+    border-radius: 20px;
+    margin: 10px; /* Adds space between images */
+}
 iframe {
     border-radius: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-content {
+    float: left;
+    width: 100%;
+    background-color: #f8f9fd;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0; 
+}
+.information {
+    background-color: #f8f9fd; /* Same background as hobby-list */
+    padding: 10px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin: 20px 0; /* Add margin for spacing from other sections */
+}
+
+.hobby-list {
+    float: left;
+    width: 100%;
+    background-color: #f8f9fd;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0; 
+}
+
+.hobby-item {
+    padding: 15px;
+    border: 2px solid #7d83b2;
+    border-radius: 10px;
+    color: #f9f9ed;
+    text-decoration: none;
+    font-size: 18px;
+    width: 80%; /* Increase the width of the rectangles */
+    max-width: 600px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hobby-item:hover {
+    background-color: #dbf4a7;
+    color: #7d83b2;
+}
+
+/* Page indicator styling */
+.page-indicator {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    color: #7d83b2;
+    font-size: 16px;
+}
+
+.page-indicator span {
+    padding: 10px;
+    border: 2px solid #7d83b2;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    main {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pictures img {
+        flex: 1 1 100%; /* On smaller screens, images take up the full width */
+    }
+
+    /* Responsive behavior */
+    table {
+        display: block; /* Make table block to scroll horizontally */
+        overflow-x: auto; /* Allow horizontal scrolling on small screens */
+        white-space: nowrap; /* Prevent text wrapping in table cells */
+    }
+
+    /* Reduce padding for smaller screens */
+    table td, table th {
+        padding: 10px;
+    }
 }
