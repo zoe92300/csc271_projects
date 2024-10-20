@@ -1,6 +1,7 @@
 /* CSS for the buttons */
 
 /*
+#5d66a8
 #7d83b2
 #8d9dcc
 #d9dbf1
@@ -12,11 +13,11 @@ body{
     font-family: 'Verdana';
     margin-left: 25px;
 }
-/* Align logo to the left and buttons horizontally to the right */
+
 .header {
     display: flex;
-    justify-content: space-between; /* Space between logo and buttons */
-    align-items: center; /* Align vertically */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 5px;
     background-color: #f9f9ed;
 }
@@ -29,14 +30,14 @@ body{
 /* Buttons container */
 .buttons {
     display: flex;
-    gap: 5px; /* Horizontal spacing between buttons */
+    gap: 5px; 
 }
 
 /* Button styles */
 .button {
     padding: 10px 20px;
     background-color: #d9dbf1;
-    color: #8d9dcc;
+    color: #5d66a8;
     text-decoration: none;
     border-radius: 15px;
     font-weight: bold;
@@ -44,43 +45,44 @@ body{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     outline: none;
     text-align: center;
-    display: flex;            /* Utilisation de flexbox */
-    justify-content: center;   /* Centre horizontalement le texte */
+    display: flex;            
+    justify-content: center;   
     align-items: center;     
     padding: 10px 20px;
     background-color: #d9dbf1;
 }
 .active {
-    background-color: #7d83b2; /* Change background color for active link */
-    color: #f9f9ed; /* Change text color for active link */
+    background-color: #7d83b2; 
+    color: #f9f9ed;
 }
 .active:hover {
-    background-color: #dbf4a7; /* Lighter background on hover */
-    color: #7d83b2; /* Change the text color on hover */
+    background-color: #dbf4a7; 
+    color: #7d83b2; 
 }
 
-/* Hover effect on buttons */
+
 .button:hover {
     background-color: #dbf4a7;
 }
 
-/* Adjust the spacing for the buttons */
+
 .about-link {
     margin-right: 10px;
 }
 
-  
+/* Headings */
 h1 {
-    color: #7d83b2;
+    color: #5d66a8;
 }
 h2 {
-    color: #7d83b2;
+    color: #5d66a8;
 }
 h3 {
-    color: #7d83b2;
+    color: #5d66a8;
 }
+/* List */
 li {
-    color: #7d83b2;
+    color: #5d66a8;
     margin-left: 25px;
     
 }
@@ -90,7 +92,7 @@ li::marker {
 }
 
 
-/* CSS for spacing between the links */
+/* Specific Link */
 .about-link {
     margin-right: 10px;
 }
@@ -111,7 +113,7 @@ main img {
     
 p {
     background-color: #f9f9ed;
-    color: #7d83b2;
+    color: #5d66a8;
     padding: 25px;
     margin: 20px;
     border-radius: 20px;
@@ -127,45 +129,45 @@ p {
   
 }
 
-/* Table styling */
+/* Table */
 table {
-    width: 100%; /* Ensures the table takes the full width of its container */
+    width: 100%; 
     background-color: #f9f9ed;
-    color: #8d9dcc;
+    color: #7d83b2;
     padding: 20px;
     margin: 30px 0;
     border-radius: 20px;
     border-collapse: collapse;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to give some depth */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Table header styling */
+/* Table header */
 table tr:first-child {
-    color: #7d83b2;
+    color: #5d66a8;
     font-weight: bold;
 }
 
-/* Table cell padding */
+/* Table cell */
 table td, table th {
     padding: 15px;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 
-
+/* Art titles */
 
 .art-title {
-    color: #7d83b2;
+    color: #5d66a8;
 }
 .art-subtitle {
-    color: #8d9dcc;
-}
-
-label{
     color: #7d83b2;
 }
+
+label {
+    color: #5d66a8;
+}
 input, textarea{
-    border-color: #7d83b2;
+    border-color: #5d66a8;
     border-radius: 6px ;
 }
 input:focus, textarea:focus {
@@ -174,8 +176,9 @@ input:focus, textarea:focus {
     box-shadow: 0 0 5px #dbf4a7; 
 }
 
+/* Links */
 
-a{
+a {
     color: #dbf4a7;
     text-decoration: none;
     background-color: #8d9dcc;
@@ -184,7 +187,7 @@ a{
     border-radius: 5px;
 }
 a:hover{
-    color: #7d83b2;
+    color: #5d66a8;
     text-decoration: none;
     background-color: #d9dbf1;
 }
@@ -194,7 +197,7 @@ main a:visited {
     font-weight: bold; 
 }
 main a:visited:hover {
-    color: #7d83b2;
+    color: #5d66a8;
     text-decoration: none;
     background-color: #d9dbf1;
 }
@@ -202,35 +205,49 @@ main a:visited:hover {
 
 
 .footnote {
-    color: #7d83b2;
+    color: #5d66a8;
     font-size: 12px;
     font-style: italic;
     text-align: left;
     margin-bottom: 20px;
 }
 
-
+/* Pictures */
 .pictures {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; /* Ensures the images wrap if there’s not enough space */
+    flex-wrap: wrap; 
 }
 
 .pictures img {
-    max-width: 100%; /* Makes sure images don’t overflow their container */
-    height: auto; /* Keeps the aspect ratio */
-    flex: 1 1 48%; /* Allows images to take up 48% of the parent container */
+    max-width: 100%; 
+    height: auto; 
+    flex: 1 1 48%; 
     border-radius: 20px;
-    margin: 10px; /* Adds space between images */
+    margin: 10px; 
 }
-iframe {
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; 
+}
+
+/* Responsive iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 
 img {
     max-width: 100%;
@@ -250,10 +267,10 @@ img {
     margin: 20px 0; 
 }
 .information {
-    background-color: #f8f9fd; /* Same background as hobby-list */
+    background-color: #f8f9fd; 
     padding: 10px;
-    border-radius: 10px; /* Optional: Add rounded corners */
-    margin: 20px 0; /* Add margin for spacing from other sections */
+    border-radius: 10px; 
+    margin: 20px 0; 
 }
 
 .hobby-list {
@@ -272,19 +289,19 @@ img {
 
 .hobby-item {
     padding: 15px;
-    border: 2px solid #7d83b2;
+    border: 2px solid #5d66a8;
     border-radius: 10px;
     color: #f9f9ed;
     text-decoration: none;
     font-size: 18px;
-    width: 80%; /* Increase the width of the rectangles */
+    width: 80%; 
     max-width: 600px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .hobby-item:hover {
     background-color: #dbf4a7;
-    color: #7d83b2;
+    color: #5d66a8;
 }
 
 /* Page indicator styling */
@@ -292,16 +309,17 @@ img {
     margin-top: 30px;
     display: flex;
     justify-content: flex-end;
-    color: #7d83b2;
+    color: #5d66a8;
     font-size: 16px;
 }
 
 .page-indicator span {
     padding: 10px;
-    border: 2px solid #7d83b2;
+    border: 2px solid #5d66a8;
     border-radius: 10px;
 }
 
+/* Responsive design */
 @media screen and (max-width: 600px) {
     .header {
         flex-direction: column;
@@ -324,14 +342,13 @@ img {
     }
 
     .pictures img {
-        flex: 1 1 100%; /* On smaller screens, images take up the full width */
+        flex: 1 1 100%;
     }
 
-    /* Responsive behavior */
     table {
-        display: block; /* Make table block to scroll horizontally */
-        overflow-x: auto; /* Allow horizontal scrolling on small screens */
-        white-space: nowrap; /* Prevent text wrapping in table cells */
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap; 
     }
 
     /* Reduce padding for smaller screens */
