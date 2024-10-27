@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Explore our comprehensive list of hobbies, including crochet, watercolor painting, tie & dye, and wood carving. Find inspiration for your next creative project." />
-        <meta name="keywords" content="hobby list, crochet, watercolor, painting, crafts" />
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="Zoe Chesnais">
-        <meta name="pragma" content="no-cache">
-        <meta name="expires" content="Fri, 04 Apr 2025 23:59:59 GMT">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Comprehensive Hobby List - Crochet, Painting, Wood Carving & More</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive list of hobbies, including crochet, watercolor painting, tie & dye, and wood carving. Find inspiration for your next creative project." />
+    <meta name="keywords" content="hobby list, crochet, watercolor, painting, crafts" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Zoe Chesnais">
+    <meta name="pragma" content="no-cache">
+    <meta name="expires" content="Fri, 04 Apr 2025 23:59:59 GMT">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comprehensive Hobby List - Crochet, Painting, Wood Carving & More</title>
+</head>
 <body>
     <div class="header">
         <div class="logo">
@@ -27,19 +27,25 @@
 
     <main>
         <div class="hobby-list">
-            <h1>Hobby List</h1>
-        <div class="hobby-list">
-            <a href="#" class="hobby-item">Crochet</a>
-            <a href="#" class="hobby-item">Watercolor painting</a>
-            <a href="#" class="hobby-item">Tie & Dye</a>
-            <a href="#" class="hobby-item">Wood carving</a>
-        </div>
+            <!-- Align the counter with the title -->
+            <div id="counter-align">
+                <h1 id="hobby-title">Hobby List</h1>
+                <div id="counter">Seen hobbies: 0</div>
+            </div>
+
+            <!-- Hobby items -->
+            <a href="#" class="hobby-item" data-details="Learn to crochet beautiful patterns.">Crochet</a>
+            <a href="#" class="hobby-item" data-details="Create stunning watercolor paintings.">Watercolor painting</a>
+            <a href="#" class="hobby-item" data-details="Express your creativity with tie & dye techniques.">Tie & Dye</a>
+            <a href="#" class="hobby-item" data-details="Craft intricate designs with wood carving.">Wood carving</a>
         
+        <!-- Page indicator -->
         <div class="page-indicator">
             <span>1/6</span>
         </div>
-            
+
         </div>
     </main>
+    <script src="js/simple_script.js"></script>
 </body>
 </html>

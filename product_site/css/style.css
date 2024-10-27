@@ -319,6 +319,58 @@ img {
     border-radius: 10px;
 }
 
+.tooltip {
+    position: absolute;
+    color: #f8f9fd;
+    font-family: Verdana;
+    background-color: #5d66a8;
+    border: 2px solid #dbf4a7;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    max-width: 200px;
+    font-size: 0.9em;
+    display: none; 
+}
+/* Align title and counter */
+#counter-align {
+    position: relative;
+    width: 100%;
+    text-align: center; /* Center text horizontally */
+}
+
+#hobby-title {
+    margin: 0; /* Remove auto margin */
+}
+
+#counter {
+    position: absolute;
+    right: 10px; /* Ajouter une marge de 10px à droite */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em; /* Augmenter la taille du texte */
+    background-color: #f9f9ed;
+    color: #5d66a8;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#artists-container {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+.highlight {
+    background-color: #dbf4a7; 
+}
+
+
+
 /* Responsive design */
 @media screen and (max-width: 600px) {
     .header {
@@ -354,5 +406,16 @@ img {
     /* Reduce padding for smaller screens */
     table td, table th {
         padding: 10px;
+    }
+    #counter-align {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #counter {
+        position: static;
+        margin-top: 10px; 
+        transform: none;
     }
 }
