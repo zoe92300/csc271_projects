@@ -15,7 +15,7 @@
 
 const favoriteMovies = ["Mamma mia", "Pitch Perfect"];
 const moviePosters = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVPRLDV7MnijSQxdCn_Oxn7ZyKzlnBQdCukw&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6c20MDnL2UcmO07BKFtEvpQniNxTzUjiUg&s"];
-const movieLinks = ["mamma-mia.html", "pitch-perfect.html"];
+const movieLinks = ["mamma-mia.html", "https://oceanepoussin.rhody.dev/csc_271_projects-/Labs/lab8_uri_mdb-main/pitch-perfect.html"];
 const movieRatings = [4, 4, 5];
 
 
