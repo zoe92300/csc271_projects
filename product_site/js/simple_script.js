@@ -84,3 +84,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Get the hobby recommendation
+function getHobby() {
+    const freeTime = document.querySelector('input[name="free-time"]:checked').value;
+    const budget = document.querySelector('input[name="budget"]:checked').value;
+    const concentration = document.querySelector('input[name="concentration"]:checked').value;
+    
+    let hobby = "";
+    
+    if (freeTime === "a-lot") {
+        hobby = "Knitting";
+    } else {
+        if (budget === "high") {
+            hobby = "Pearl Jewelry";
+        } else if (budget === "low") {
+            if (concentration === "high") {
+                hobby = "Watercolor";
+            } else if (concentration === "low") {
+                hobby = "Stamp Painting";
+            }
+        }
+    }
+    
+    document.getElementById("hobby-result").textContent = "Recommended Hobby: " + hobby;
+}
+
