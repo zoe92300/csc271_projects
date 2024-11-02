@@ -98,14 +98,13 @@ function getHobby() {
     } else {
         if (budget === "high") {
             hobby = "Pearl Jewelry";
-        } else if (budget === "low") {
-            if (concentration === "high") {
-                hobby = "Watercolor";
-            } else if (concentration === "low") {
-                hobby = "Stamp Painting";
-            }
+        } else if (budget === "low" && concentration === "high") {
+            hobby = "Watercolor";
+        } else if (budget === "low" && concentration === "low") {
+            hobby = "Stamp Painting";
         }
     }
+    
     
     document.getElementById("hobby-result").textContent = "Recommended Hobby: " + hobby;
 }
