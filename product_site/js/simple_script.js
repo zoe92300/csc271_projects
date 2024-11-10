@@ -1,3 +1,5 @@
+
+document.addEventListener("DOMContentLoaded", function () {
 const hobbyElements = document.querySelectorAll('.hobby-item');
 
 // create tooltip element
@@ -85,6 +87,7 @@ if (totalHobbies > 0) {
         index++;
     }
 }
+});
 
 // highlight the popularity cells with "High" value
 document.addEventListener("DOMContentLoaded", function () {
