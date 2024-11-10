@@ -38,7 +38,7 @@ if (totalHobbies > 0) {
             }
         });
 
-        // displaying details on hobbies when hovering
+        // displaying details on hobbies when hovering on item
         hobbyElement.addEventListener('mouseover', (event) => {
             tooltip.textContent = hobbyElement.getAttribute('data-details');
             tooltip.style.display = 'block';
