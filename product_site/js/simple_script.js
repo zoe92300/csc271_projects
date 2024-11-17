@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("hobby-result").textContent = "Recommended Hobby: " + hobby;
     }
 
+    document.getElementById("hobby-submit").addEventListener("click", getHobby);
+
     // function with two parameters - updates the counter display
     function updateCounterDisplay(currentCount, totalCount) {
         document.getElementById("counter").textContent = `Seen hobbies: ${currentCount} of ${totalCount}`;
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // displaying message when all hobbies seen
+
             hobbyElement.addEventListener('mouseover', (event) => {
                 tooltip.textContent = hobbyElement.getAttribute('data-details');
                 tooltip.style.display = 'block';
@@ -110,4 +112,87 @@ document.addEventListener("DOMContentLoaded", function () {
             list.style.display = "none";
         }
     });
+});
+
+// Focus and blur events
+
+let feedback = document.getElementById('feedback');
+
+let validName = false;
+let validWork = false;
+let validSocial = false;
+
+let fullname = document.getElementById('name');
+let work = document.getElementById('work');
+let socialmedia = document.getElementById('social-media');
+let comments = document.getElementById('comments');
+
+// Focus events
+
+fullname.addEventListener("focus", () => {
+    feedback.innerHTML = "Please enter the artist's name";
+});
+work.addEventListener("focus", () => {
+    feedback.innerHTML = "Please enter a platform";
+});
+socialmedia.addEventListener("focus", () => {
+    feedback.innerHTML = "Please enter a username for social media";
+});
+comments.addEventListener("focus", () => {
+    feedback.innerHTML = "Feel free to add comments";
+});
+
+// Blur events
+
+fullname.addEventListener("blur", () => {
+    if (!fullname.value.trim()) {
+        fullname.style.borderColor = 'red';
+        feedback.innerHTML = 'You did not enter a name. Please try again.';
+        validName = false;
+    } else {
+        fullname.style.borderColor = '#ccc';
+        feedback.innerHTML = '';
+        validName = true;
+    }
+});
+
+work.addEventListener("blur", () => {
+    if (!work.value.trim()) {
+        work.style.borderColor = 'red';
+        feedback.innerHTML = 'You did not enter a platform. Please try again.';
+        validWork = false;
+    } else {
+        work.style.borderColor = '#ccc';
+        feedback.innerHTML = '';
+        validWork = true;
+    }
+});
+
+socialmedia.addEventListener("blur", () => {
+    if (!socialmedia.value.trim()) {
+        socialmedia.style.borderColor = 'red';
+        feedback.innerHTML = 'You did not enter a social media username. Please try again.';
+        validSocial = false;
+    } else {
+        socialmedia.style.borderColor = '#ccc';
+        feedback.innerHTML = '';
+        validSocial = true;
+    }
+});
+
+// Form submission
+const form = document.getElementById('artist-form');
+form.addEventListener('submit', (event) => {
+
+    event.preventDefault();
+
+    if (validName && validWork && validSocial) {
+        feedback.innerHTML = '<span style="color: green;">User responses successfully recorded. Thank you!</span>';
+        form.reset(); 
+        validName = false;
+        validWork = false;
+        validSocial = false;
+    } else {
+        feedback.innerHTML = 'Please complete all required fields correctly.';
+    }
 });

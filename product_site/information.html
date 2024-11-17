@@ -174,7 +174,7 @@
                 </label>
                 <br>
                 <br>
-                <button type="button" onclick="getHobby()" class="button" >Get Hobby</button>
+                <button type="button" id="hobby-submit" class="button" >Get Hobby</button>
             </form>
             <p id="hobby-result" ></p>
         </section>
@@ -185,7 +185,7 @@
             You have some recommendations ?
         </h2>
         <p> Feel free to fill the form to suggest artists for next week !</p>
-        <form>
+        <form id="artist-form">
             <h3>Suggest an Artist</h3>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -206,13 +206,15 @@
             <br>
 
             <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" required></textarea>
-            
+            <textarea id="comments" name="comments" ></textarea>
+        
             <br>
             <br>
 
-            <button type="submit" class="button">Submit</button>
+            <button type="submit" class="button" >Submit</button>
         </form>
+
+        <div id="feedback"></div>
         <section>
 
 

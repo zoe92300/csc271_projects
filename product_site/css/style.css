@@ -419,3 +419,13 @@ img {
         transform: none;
     }
 }
+#feedback {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+    color: red;
+    font-family: Verdana;
+}
