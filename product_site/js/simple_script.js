@@ -70,9 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
+            // add event listener on hover
 
             hobbyElement.addEventListener('mouseover', (event) => {
+                
+                // create hobby tooltip
                 tooltip.textContent = hobbyElement.getAttribute('data-details');
+                
+                // display the tooltip
                 tooltip.style.display = 'block';
 
                 const hobbyRect = hobbyElement.getBoundingClientRect();
@@ -80,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 tooltip.style.left = `${hobbyRect.right + 10}px`;
             });
 
+            // on mouseout stop displaying the tooltip created 
             hobbyElement.addEventListener('mouseout', () => {
                 tooltip.style.display = 'none';
             });
