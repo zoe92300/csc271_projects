@@ -420,7 +420,7 @@ img {
     }
 }
 #feedback {
-    margin: 2px;
+    margin: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
