@@ -429,17 +429,17 @@ img {
     color: red;
     font-family: Verdana;
 }
-main {
-    display: flex; /* Disposition en flexbox */
-    flex-direction: row; /* Aligner les enfants côte à côte */
-    justify-content: space-between; /* Espace entre les colonnes */
-    align-items: flex-start; /* Aligner les colonnes en haut */
-    
+main.hobby-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .hobby-list {
     width: 45%; /* La liste occupe 45% de la largeur */
     padding: 20px;
+
 }
 
 #hobby-details {
