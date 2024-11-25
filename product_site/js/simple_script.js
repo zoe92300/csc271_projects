@@ -274,3 +274,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Highlight Popular Hobbies
+function highlightPopularHobbies() {
+    const popularityCells = document.querySelectorAll('.popularity');
+
+    popularityCells.forEach((cell) => {
+        if (cell.textContent.trim() === "High") {
+            // Ajout d'une classe pour les styles
+            cell.parentElement.classList.add('highlight');
+        }
+    });
+}
+
+// Écouteur pour le bouton "Highlight Popular Hobbies"
+document.getElementById('highlight-button').addEventListener('click', () => {
+    highlightPopularHobbies();
+});
