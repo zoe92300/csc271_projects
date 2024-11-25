@@ -429,3 +429,70 @@ img {
     color: red;
     font-family: Verdana;
 }
+main {
+    display: flex; /* Disposition en flexbox */
+    flex-direction: row; /* Aligner les enfants côte à côte */
+    justify-content: space-between; /* Espace entre les colonnes */
+    align-items: flex-start; /* Aligner les colonnes en haut */
+    
+}
+
+.hobby-list {
+    width: 45%; /* La liste occupe 45% de la largeur */
+    padding: 20px;
+}
+
+#hobby-details {
+    width: 50%; /* La section des détails occupe 50% de la largeur */
+    padding: 20px;
+    display: none; /* Par défaut, masqué */
+    border-left: 2px solid #ddd; /* Séparation entre les deux colonnes */
+}
+
+.hobby-detail-view img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.hobby-detail-view {
+    background-color: #f9f9ed; /* Couleur de fond */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#all-seen-message {
+    margin-top: 15px; /* Ajoute un espace entre le message et la liste */
+    font-size: 1rem;
+    color: #5d66a8;
+    background-color: #f9f9ed;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#initial-mess {
+    
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 50%; /* Maintient la largeur de 50% */
+    height: 100%; /* Prend toute la hauteur disponible du conteneur parent */
+    padding: 20px;
+    margin-top: 30px; /* Ajoute un espace au-dessus */
+    border-left: 2px solid #ddd; /* Ligne de séparation */
+    text-align: center; /* Centrage du texte */
+    color: #5d66a8; /* Couleur du texte */
+    font-size: 1.2rem; /* Taille de la police */
+    box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur/hauteur */
+    display: block; /* Affiche la section des détails */
+    margin-top: 20px; /* Ajoute un espace entre le texte et l'image */
+    max-width: 80%; /* Ajuste la largeur maximale de l'image */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+#initial-mess img {
+    max-width: 60%; 
+    height: auto;
+}
+
+
+

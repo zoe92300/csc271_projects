@@ -9,6 +9,7 @@
     <meta name="author" content="Zoe Chesnais">
     <meta name="pragma" content="no-cache">
     <meta name="expires" content="Fri, 04 Apr 2025 23:59:59 GMT">
+    <a href="https://storyset.com/online" hidden >Online illustrations by Storyset</a>
     <link rel="stylesheet" href="css/style.css">
     <title>Comprehensive Hobby List - Crochet, Painting, Wood Carving & More</title>
 </head>
@@ -26,26 +27,38 @@
     </div>
 
     <main>
+        <!-- Left section: Hobby list -->
         <div class="hobby-list">
             <div id="counter-align">
                 <h1 id="hobby-title">Hobby List</h1>
                 <div id="counter">Seen hobbies: 0</div>
-                <p id="all-seen-message" style="display: none;"></p> 
             </div>
+            <p id="all-seen-message" style="display: none; text-align: center;"></p>
 
             <!-- Hobby items -->
             <a href="#" class="hobby-item" data-details="Learn to crochet beautiful patterns.">Crochet</a>
-            <a href="#" class="hobby-item" data-details="Create stunning watercolor paintings.">Watercolor painting</a>
-            <a href="#" class="hobby-item" data-details="Express your creativity with tie & dye techniques.">Tie & Dye</a>
-            <a href="#" class="hobby-item" data-details="Craft intricate designs with wood carving.">Wood carving</a>
+            <a href="#" class="hobby-item" data-details="Create stunning watercolor paintings.">Painting</a>
+            <a href="#" class="hobby-item" data-details="Express your creativity with tie & dye techniques.">Tie and Dye</a>
+            <a href="#" class="hobby-item" data-details="Craft intricate designs with wood carving.">Wood Carving</a>
         
-        <!-- Page indicator -->
-        <div class="page-indicator">
-            <span>1/6</span>
+            <!-- Page indicator -->
+            <div class="page-indicator">
+                <span>1/6</span>
+            </div>
         </div>
 
+        <!-- Right section: Hobby details -->
+        <div id="initial-mess">
+            <p>Please select a hobby to get all the information you need!</p>
+            <img src="images/click.svg" alt="click">
         </div>
+        <div id="hobby-details" style="display: none;"></div>
+        
+        
+  
     </main>
+
     <script src="js/simple_script.js"></script>
+    
 </body>
 </html>
