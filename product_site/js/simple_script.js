@@ -275,19 +275,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Highlight Popular Hobbies
-function highlightPopularHobbies() {
-    const popularityCells = document.querySelectorAll('.popularity');
+const toggleListButton = document.getElementById("toggle-list-button");
+const list = document.getElementsByTagName("ul")[0];
 
-    popularityCells.forEach((cell) => {
-        if (cell.textContent.trim() === "High") {
-            // Ajout d'une classe pour les styles
-            cell.parentElement.classList.add('highlight');
-        }
-    });
-}
-
-// Écouteur pour le bouton "Highlight Popular Hobbies"
-document.getElementById('highlight-button').addEventListener('click', () => {
-    highlightPopularHobbies();
+toggleListButton.addEventListener("click", function () {
+    const currentDisplay = getComputedStyle(list).display; // Récupère le display calculé
+    if (currentDisplay === "none") {
+        list.style.display = "block"; // Affiche la liste
+    } else {
+        list.style.display = "none"; // Cache la liste
+    }
 });
+
+ // highlight the popularity cells with "High" value
+ const highlightButton = document.getElementById("highlight-button");
+
+ highlightButton.addEventListener("click", function () {
+     const popularityCells = document.getElementsByClassName("popularity");
+
+     for (let cell of popularityCells) {
+         if (cell.textContent === "High") {
+             cell.classList.toggle("highlight");
+         }
+     }
+ });
+
