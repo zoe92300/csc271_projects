@@ -195,19 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return "No recommendation available";
     }
 
-     // highlight the popularity cells with "High" value
-    const highlightButton = document.getElementById("highlight-button");
-
-    highlightButton.addEventListener("click", function () {
-        const popularityCells = document.getElementsByClassName("popularity");
-
-        for (let cell of popularityCells) {
-            if (cell.textContent === "High") {
-                cell.classList.toggle("highlight");
-            }
-        }
-    });
-
     // Form submission and field validation
     let feedback = document.getElementById('feedback');
 
