@@ -21,6 +21,23 @@ body{
     padding: 5px;
     background-color: #f9f9ed;
 }
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #5d66a8;
+    color: #f9f9ed;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {
+    transform: translateY(0); /* Slide into view when focused */
+}
+
 
 /* Logo container */
 .logo {
@@ -174,6 +191,12 @@ input:focus, textarea:focus {
     outline: none;
     border: 2px solid #dbf4a7; 
     box-shadow: 0 0 5px #dbf4a7; 
+}
+.button:focus {
+    outline: 3px solid #dbf4a7; /* High-contrast outline */
+    outline-offset: 2px; /* Offset to improve visibility */
+    background-color: #8d9dcc; /* Change background for focus */
+    color: #f9f9ed;
 }
 
 /* Links */
@@ -341,10 +364,17 @@ img {
 }
 
 #hobby-title {
-    margin: 0; /* Remove auto margin */
+    flex: 1 1 auto; /* Allow it to grow and shrink as needed */
+    font-size: 2rem; /* Ensure the font size is not too large */
+    margin: 0; /* Remove extra margin */
+    text-align: left; /* Align title to the left */
 }
 
 #counter {
+    flex: 0 0 auto; /* Prevent the counter from stretching */
+    font-size: 1rem; /* Adjust font size for consistency */
+    padding: 5px 10px;
+    text-align: center;
     position: absolute;
     right: 10px; /* Ajouter une marge de 10px à droite */
     top: 50%;
@@ -418,6 +448,38 @@ img {
         margin-top: 10px; 
         transform: none;
     }
+
+    #counter-align {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de se positionner sur plusieurs lignes */
+        justify-content: space-between; /* Éloigne le titre et le compteur */
+        align-items: center; /* Aligne les éléments verticalement */
+        width: 100%; /* Prend tout l'espace disponible */
+        gap: 10px; /* Ajoute un espacement entre les éléments */
+        margin: 0; /* Supprime les marges inutiles */
+        padding: 10px 0; /* Ajoute un peu d'espace interne */
+        box-sizing: border-box; /* Gère les marges et paddings */
+    }
+    
+    #hobby-title {
+        font-size: 2rem; /* Taille adaptée pour le titre */
+        flex: 1 1 auto; /* Permet au titre de grandir ou rétrécir */
+        margin: 0; /* Supprime les marges par défaut */
+        text-align: left; /* Aligne le texte à gauche */
+    }
+    
+    #counter {
+        font-size: 1rem; /* Taille ajustée pour le compteur */
+        padding: 5px 10px; /* Espacement interne */
+        text-align: center; /* Centre le texte */
+        background-color: #f9f9ed; /* Assure une bonne visibilité */
+        color: #5d66a8;
+        border-radius: 8px;
+        flex: 0 0 auto; /* Le compteur ne change pas de taille */
+    }
+    
+    
+    
 }
 #feedback {
     margin: 10px;
