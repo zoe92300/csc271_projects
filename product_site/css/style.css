@@ -35,7 +35,7 @@ body{
 }
 
 .skip-link:focus {
-    transform: translateY(0); /* Slide into view when focused */
+    transform: translateY(0); 
 }
 
 
